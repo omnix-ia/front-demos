@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Maps from "./components/Maps"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <div className="App">
+    <div>
+      <select>
+        <option value="novalue">Seleccione una region</option>
+        <option value="value1">Metropolitana de santiago</option>
+        <option value="value1">Valparaiso</option>
+      </select>
+      <select>
+        <option value="novalue">Seleccione una comuna</option>
+        <option value="value1">Las condes</option>
+        <option value="value1">Santiago</option>
+      </select>
     </div>
-  );
+    <div>
+      <Maps />
+    </div>
+  </div>
 }
 
-export default App;
+export default App
